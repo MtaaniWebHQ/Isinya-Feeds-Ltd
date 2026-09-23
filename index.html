@@ -258,6 +258,17 @@
   .media-feeds { background: linear-gradient(150deg, #EDE6D6, #E1D8C0); }
   .media-livestock { background: linear-gradient(150deg, #E9E2D3, #DCD0B8); }
   .media-rabbit { background: linear-gradient(150deg, #EFE8DA, #E3D7C1); }
+  .media-chicks { background: linear-gradient(150deg, #F3ECD6, #E9DBB0); }
+  .media-growing { background: linear-gradient(150deg, #E6E9D9, #D6DCBE); }
+  .media-eggs { background: linear-gradient(150deg, #F1E9DD, #E5D7C4); }
+  .media-mature { background: linear-gradient(150deg, #EAE1D2, #DCC9A9); }
+
+  /* POULTRY AVAILABILITY SECTION */
+  .poultry-availability { background: var(--cream); }
+  .poultry-group { margin-top: 44px; }
+  .poultry-group:first-of-type { margin-top: 0; }
+  .poultry-group h3 { font-size: 1.2rem; margin-bottom: 18px; }
+  .poultry-note { color: var(--ink-soft); font-size: 0.86rem; margin-top: -8px; margin-bottom: 34px; max-width: 620px; }
 
   .product-body { padding: 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
   .product-cat { font-size: 0.72rem; color: var(--gold); font-weight: 600; letter-spacing: 0.02em; }
@@ -526,7 +537,6 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#shop">Shop</a></li>
-        <li><a href="#poultry-availability">Poultry</a></li>
         <li><a href="#shop">Feeds</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -553,7 +563,6 @@
 <div class="mobile-nav" id="mobileNav">
   <a href="#home">Home</a>
   <a href="#shop">Shop</a>
-  <a href="#poultry-availability">Poultry</a>
   <a href="#about">About Us</a>
   <a href="#contact">Contact</a>
   <a class="btn btn-gold" href="#shop">Shop Now</a>
@@ -642,70 +651,6 @@
   </div>
 </section>
 
-<section class="poultry-avail" id="poultry-availability">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Poultry Availability</p>
-      <h2>Healthy Birds for Every Stage</h2>
-      <p class="lead">Isinya Feeds Ltd also provides poultry products including improved kienyeji chicks and commercial layers. Availability and pricing may vary depending on age, breed and current stock. Contact our team to confirm availability before placing an order.</p>
-    </div>
-
-    <div class="avail-block reveal">
-      <h3>Day-Old Chicks</h3>
-      <p class="avail-note">Prices are listed as provided and should be confirmed with Isinya Feeds Ltd before ordering. Availability, minimum order quantities, vaccination and delivery charges may vary.</p>
-      <div class="avail-grid">
-        <div class="avail-item"><h4>Layers</h4><div class="price">KSh 95</div></div>
-        <div class="avail-item"><h4>Broilers</h4><div class="price">KSh 90</div></div>
-        <div class="avail-item"><h4>Improved Kienyeji</h4><div class="price">KSh 100</div></div>
-      </div>
-      <a class="btn btn-green btn-sm" href="https://wa.me/254787220794?text=Hello%20Isinya%20Feeds%20Ltd%2C%20I%20would%20like%20to%20check%20availability%20of%20day-old%20chicks." target="_blank" rel="noopener">Check Availability on WhatsApp</a>
-    </div>
-
-    <div class="avail-block reveal">
-      <h3>Growing &amp; Point-of-Lay Birds</h3>
-      <p class="avail-note">Please confirm current availability, vaccination status and delivery arrangements before ordering.</p>
-      <div class="avail-grid">
-        <div class="avail-item"><h4>1 Month Old</h4><div class="price">KSh 180</div></div>
-        <div class="avail-item"><h4>2 Months Old</h4><div class="price">KSh 250</div></div>
-        <div class="avail-item"><h4>3 Months Old</h4><div class="price">KSh 300</div></div>
-        <div class="avail-item"><h4>Point of Lay</h4><div class="price">KSh 450</div></div>
-      </div>
-      <a class="btn btn-green btn-sm" href="https://wa.me/254787220794?text=Hello%20Isinya%20Feeds%20Ltd%2C%20I%20would%20like%20to%20enquire%20about%20growing%20and%20point-of-lay%20birds." target="_blank" rel="noopener">Enquire About Birds</a>
-    </div>
-        <div class="avail-block reveal">
-      <h3>Fertilized Eggs</h3>
-      <p class="avail-note">Fertilized eggs are available by tray. Please confirm current availability and delivery arrangements before ordering.</p>
-
-      <div class="avail-grid">
-        <div class="avail-item">
-          <h4>Fertilized Eggs</h4>
-          <div class="price">KSh 410 <span style="font-family:'Inter',sans-serif; font-size:0.72rem; font-weight:500; color:var(--ink-soft);">/ tray</span></div>
-        </div>
-      </div>
-
-      <a class="btn btn-green btn-sm" href="https://wa.me/254787220794?text=Hello%20Isinya%20Feeds%20Ltd%2C%20I%20would%20like%20to%20enquire%20about%20fertilized%20eggs%20at%20KSh%20410%20per%20tray." target="_blank" rel="noopener">Enquire About Fertilized Eggs</a>
-    </div>
-
-    <div class="avail-block reveal">
-      <h3>Mature Improved Kienyeji</h3>
-      <p class="avail-note">Mature improved kienyeji birds are available. Please confirm current availability and delivery arrangements before ordering.</p>
-
-      <div class="avail-grid">
-        <div class="avail-item">
-          <h4>Hen</h4>
-          <div class="price">KSh 550</div>
-        </div>
-
-        <div class="avail-item">
-          <h4>Jogoo</h4>
-          <div class="price">KSh 650</div>
-        </div>
-      </div>
-
-      <a class="btn btn-green btn-sm" href="https://wa.me/254787220794?text=Hello%20Isinya%20Feeds%20Ltd%2C%20I%20would%20like%20to%20enquire%20about%20mature%20improved%20kienyeji%20birds." target="_blank" rel="noopener">Enquire About Mature Birds</a>
-    </div>
-  </div>
-</section>
 
 <section class="about-compact" id="about">
   <div class="wrap">
@@ -880,8 +825,8 @@
     <h2>Quality You Can See</h2>
     <div class="gallery-grid">
       <div class="gallery-item reveal">
-        <img src="https://res.cloudinary.com/hztm3zo8/image/upload/v1788724936/Clear-pic-of-day-old-chicks-1_s1wpjr.jpg" alt="Healthy improved kienyeji chicks">
-        <div class="gallery-caption">Improved Kienyeji Chicks</div>
+        <img src="https://res.cloudinary.com/hztm3zo8/image/upload/v1788727471/20260906_234020_iwbpxz.jpg" alt="Healthy improved kienyeji chicks">
+        <div class="gallery-caption">Sasso Breed Chicken</div>
       </div>
       <div class="gallery-item reveal">
         <img src="https://res.cloudinary.com/hztm3zo8/image/upload/v1788724958/b06b9e85dea7638e52f9fcf8490c323d_aibi0l.jpg" alt="Commercial layers ready for production">
@@ -1000,8 +945,8 @@
       </div>
       <div class="contact-card">
         <h4>Phone</h4>
-        <div class="val">+254 787 220 794</div>
-        <a class="btn btn-outline-dark btn-sm" href="tel:+254787220794">Call Isinya Feeds</a>
+        <div class="val">+254 786 100 960</div>
+        <a class="btn btn-outline-dark btn-sm" href="tel:+254786100960">Call Isinya Feeds</a>
       </div>
       </div>
     </div>
@@ -1046,7 +991,7 @@
           <li><a href="#shop" data-filter-link="poultry-feeds">Poultry Feeds</a></li>
           <li><a href="#shop" data-filter-link="livestock-feeds">Livestock Feeds</a></li>
           <li><a href="#shop" data-filter-link="rabbit-feeds">Rabbit Feeds</a></li>
-          <li><a href="#poultry-availability">Poultry Products</a></li>
+          <li><a href="#shop">Poultry Products</a></li>
         </ul>
       </div>
       <div>
@@ -1130,12 +1075,68 @@
     { id:'rabbit-pellets', name:'Rabbit Pellets', price:2900, cat:'Rabbit Feeds', catSlug:'rabbit-feeds',
       img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1789909006/Polish_20260920_155135095_jup68o.jpg',
       desc:'Pelleted feed for rabbit farming, providing a convenient feeding option for farmers managing rabbit production.',
-      overview:'Rabbit Pellets provide a convenient pelleted feeding option for farmers managing rabbit production.' }
+      overview:'Rabbit Pellets provide a convenient pelleted feeding option for farmers managing rabbit production.' },
+
+    // ---- Day-Old Chicks ----
+    { id:'chick-layers', name:'Layers (Day-Old)', price:95, cat:'Day-Old Chicks', catSlug:'day-old-chicks',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171402/Polish_20260923_152218955_ez0vht.jpg',
+      desc:'Day-old layer chicks suited to farmers starting or expanding an egg production programme. Confirm availability and vaccination status before ordering.',
+      overview:'Day-old Layers are intended for farmers building a laying flock, offering a starting point for an egg production programme.' },
+    { id:'chick-broilers', name:'Broilers (Day-Old)', price:90, cat:'Day-Old Chicks', catSlug:'day-old-chicks',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171521/Polish_20260923_152513612_qqdzb2.jpg',
+      desc:'Day-old broiler chicks for farmers running a meat production programme. Confirm availability and vaccination status before ordering.',
+      overview:'Day-old Broilers are intended for farmers running a broiler production programme geared toward meat production.' },
+    { id:'chick-kienyeji', name:'Improved Kienyeji (Day-Old)', price:100, cat:'Day-Old Chicks', catSlug:'day-old-chicks',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1788724936/Clear-pic-of-day-old-chicks-1_s1wpjr.jpg',
+      desc:'Day-old improved kienyeji chicks, a popular option for farmers looking for dual-purpose birds. Confirm availability and vaccination status before ordering.',
+      overview:'Day-old Improved Kienyeji chicks suit farmers looking for a dual-purpose bird for both eggs and meat.' },
+
+    // ---- Growing & Point-of-Lay Birds ----
+    { id:'bird-1month', name:'1 Month Old Birds', price:180, cat:'Growing & Point-of-Lay Birds', catSlug:'growing-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171566/Polish_20260923_152622050_empv1t.jpg',
+      desc:'Birds at one month of growth, for farmers looking to skip the earliest brooding stage. Confirm current availability and vaccination status before ordering.',
+      overview:'1 Month Old birds give farmers a head start past the earliest brooding stage of poultry rearing.' },
+    { id:'bird-2month', name:'2 Months Old Birds', price:250, cat:'Growing & Point-of-Lay Birds', catSlug:'growing-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171650/Polish_20260923_152649003_iillmt.jpg',
+      desc:'Birds at two months of growth, suited to farmers continuing an existing flock or expanding current stock. Confirm current availability and vaccination status before ordering.',
+      overview:'2 Months Old birds suit farmers expanding an existing flock further along in the growing stage.' },
+    { id:'bird-3month', name:'3 Months Old Birds', price:300, cat:'Growing & Point-of-Lay Birds', catSlug:'growing-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171672/Polish_20260923_152727553_w0rlkt.jpg',
+      desc:'Birds at three months of growth, approaching the point-of-lay stage. Confirm current availability and vaccination status before ordering.',
+      overview:'3 Months Old birds are approaching point-of-lay and suit farmers preparing for egg production soon.' },
+    { id:'bird-pol', name:'Point of Lay Birds', price:450, cat:'Growing & Point-of-Lay Birds', catSlug:'growing-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171695/Polish_20260923_152821183_jifnba.jpg',
+      desc:'Point-of-lay birds ready to begin egg production. Confirm current availability and vaccination status before ordering.',
+      overview:'Point of Lay birds are ready or nearly ready to begin laying, suited to farmers wanting quicker egg production.' },
+
+    // ---- Fertilized Eggs ----
+    { id:'fertilized-eggs-tray', name:'Fertilized Eggs (per tray)', price:410, cat:'Fertilized Eggs', catSlug:'fertilized-eggs',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171718/Polish_20260923_152846820_oytrbk.jpg',
+      desc:'Fertilized eggs sold by the tray, suited to farmers looking to hatch their own chicks. Confirm current availability and delivery arrangements before ordering.',
+      overview:'Fertilized Eggs are supplied by the tray for farmers looking to incubate and hatch their own chicks.' },
+
+    // ---- Fresh Eggs ----
+    { id:'fresh-eggs-tray', name:'Fresh Eggs (per tray)', price:320, cat:'Fresh Eggs', catSlug:'fresh-eggs',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171718/Polish_20260923_152846820_oytrbk.jpg',
+      desc:'Fresh table eggs sold by the tray, suited to households and farmers looking to buy in bulk. Confirm current availability and delivery arrangements before ordering.',
+      overview:'Fresh Eggs are supplied by the tray for everyday household and bulk buying needs.' },
+
+    // ---- Mature Improved Kienyeji ----
+    { id:'kienyeji-hen', name:'Mature Improved Kienyeji Hen', price:550, cat:'Mature Improved Kienyeji', catSlug:'mature-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171747/Polish_20260923_152918632_h646xj.jpg',
+      desc:'Mature improved kienyeji hen, available for farmers restocking or starting a breeding flock. Confirm current availability and delivery arrangements before ordering.',
+      overview:'Mature Improved Kienyeji Hens suit farmers restocking or building up a breeding flock.' },
+    { id:'kienyeji-jogoo', name:'Mature Improved Kienyeji Jogoo', price:650, cat:'Mature Improved Kienyeji', catSlug:'mature-birds',
+      img:'https://res.cloudinary.com/hztm3zo8/image/upload/v1790171768/Polish_20260923_152943990_mp2q5e.jpg',
+      desc:'Mature improved kienyeji cockerel (jogoo), available for farmers restocking or starting a breeding flock. Confirm current availability and delivery arrangements before ordering.',
+      overview:'Mature Improved Kienyeji Jogoo (cockerels) suit farmers restocking or building up a breeding flock.' }
   ];
 
   var WA_NUMBER = '254787220794';
-  var mediaClassMap = { 'poultry-feeds':'media-feeds', 'livestock-feeds':'media-livestock', 'rabbit-feeds':'media-rabbit' };
-  var iconFillMap = { 'poultry-feeds':'#2D5540', 'livestock-feeds':'#6B4226', 'rabbit-feeds':'#8A6D3B' };
+  var mediaClassMap = { 'poultry-feeds':'media-feeds', 'livestock-feeds':'media-livestock', 'rabbit-feeds':'media-rabbit',
+    'day-old-chicks':'media-chicks', 'growing-birds':'media-growing', 'fertilized-eggs':'media-eggs', 'fresh-eggs':'media-eggs', 'mature-birds':'media-mature' };
+  var iconFillMap = { 'poultry-feeds':'#2D5540', 'livestock-feeds':'#6B4226', 'rabbit-feeds':'#8A6D3B',
+    'day-old-chicks':'#A6791F', 'growing-birds':'#4C6A2E', 'fertilized-eggs':'#8A6D3B', 'fresh-eggs':'#8A6D3B', 'mature-birds':'#7A5230' };
 
   function productMediaHtml(p) {
     if (!p.img) return sackSvg(p.catSlug);
@@ -1189,6 +1190,8 @@
     renderCartBadge();
     renderCartDrawer();
     renderCheckoutSummary();
+    renderProducts();
+    renderPoultryGrids();
   }
 
   function setQty(id, qty) {
@@ -1199,6 +1202,7 @@
     renderCartDrawer();
     renderCheckoutSummary();
     renderProducts();
+    renderPoultryGrids();
   }
 
   function removeFromCart(id) {
@@ -1208,6 +1212,7 @@
     renderCartDrawer();
     renderCheckoutSummary();
     renderProducts();
+    renderPoultryGrids();
   }
 
   // ---------- RENDER: CART BADGE ----------
@@ -1317,6 +1322,23 @@
       return;
     }
     grid.innerHTML = list.map(productCardHtml).join('');
+  }
+
+  // ---------- RENDER: POULTRY PRODUCT GRIDS ----------
+  var poultryGridMap = {
+    'day-old-chicks': 'dayOldChicksGrid',
+    'growing-birds': 'growingBirdsGrid',
+    'fresh-eggs': 'freshEggsGrid',
+    'fertilized-eggs': 'fertilizedEggsGrid',
+    'mature-birds': 'matureBirdsGrid'
+  };
+  function renderPoultryGrids() {
+    Object.keys(poultryGridMap).forEach(function (slug) {
+      var el = document.getElementById(poultryGridMap[slug]);
+      if (!el) return;
+      var list = PRODUCTS.filter(function (p) { return p.catSlug === slug; });
+      el.innerHTML = list.map(productCardHtml).join('');
+    });
   }
 
   // Filters
@@ -1487,6 +1509,7 @@
     renderCartBadge();
     renderCartDrawer();
     renderProducts();
+    renderPoultryGrids();
     renderCheckoutSummary();
 
     document.getElementById('orderSuccess').classList.add('show');
@@ -1580,6 +1603,7 @@
 
   // ---------- INITIAL RENDER ----------
   renderProducts();
+  renderPoultryGrids();
   renderCartBadge();
   renderCartDrawer();
   renderCheckoutSummary();
