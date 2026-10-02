@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Isinya Feeds Ltd | Shop Poultry Feeds &amp; Poultry Products Online</title>
+<link rel="canonical" href="https://isinyafeedsltd.co.ke/">
 <meta name="description" content="Shop poultry feeds and poultry products from Isinya Feeds Ltd. Browse the catalogue, build your order online and send it through WhatsApp for confirmation and payment instructions.">
 <meta name="keywords" content="improved kienyeji chicks, kienyeji chicks Kenya, buy kienyeji chicks Kenya, poultry farming Kenya, poultry feeds Kenya, chicken farming Kenya, poultry business Kenya, commercial layers Kenya, Kuroiler chicks Kenya, Sasso chicks Kenya, Kenbro chicks Kenya, Kari chickens Kenya, Rainbow chickens Kenya, healthy chicks Kenya, day old chicks Kenya, point of lay birds Kenya, fertilized eggs Kenya, poultry products Kenya, livestock feeds Kenya, rabbit feeds Kenya, poultry farm Kajiado, chicks in Kajiado, poultry feeds Kisaju, Isinya Feeds Ltd">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -521,6 +522,17 @@
     .reveal { opacity: 1; transform: none; transition: none; }
     .gallery-item img, .product-media svg { transition: none; }
   }
+
+
+  /* VIEW PRODUCT */
+  .card-actions { display: flex; flex-direction: column; gap: 8px; }
+  .view-btn {
+    display: block; text-align: center; border: 1px solid var(--green-deep); color: var(--green-deep);
+    border-radius: 4px; padding: 9px 14px; font-size: 0.86rem; font-weight: 600; transition: all 0.15s ease;
+  }
+  .view-btn:hover { background: var(--green-deep); color: #fff; }
+  a.product-media { display: flex; }
+  a.product-name { display: block; }
 
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 </style>
@@ -1286,16 +1298,18 @@
     return list;
   }
 
+  function productUrl(id) { return '/product/' + id; }
+
   function productCardHtml(p) {
     var qty = cart[p.id] || 0;
     return '<div class="product-card">' +
-      '<div class="product-media ' + mediaClassMap[p.catSlug] + '" onclick="openQuickView(\'' + p.id + '\')">' + productMediaHtml(p) + '</div>' +
+      '<a class="product-media ' + mediaClassMap[p.catSlug] + '" href="' + productUrl(p.id) + '" aria-label="View ' + p.name + '">' + productMediaHtml(p) + '</a>' +
       '<div class="product-body">' +
         '<div class="product-cat">' + p.cat + '</div>' +
-        '<div class="product-name" onclick="openQuickView(\'' + p.id + '\')">' + p.name + '</div>' +
+        '<a class="product-name" href="' + productUrl(p.id) + '">' + p.name + '</a>' +
         '<div class="product-desc">' + p.desc + '</div>' +
         '<div class="product-price">' + fmt(p.price) + '</div>' +
-        '<div class="product-foot">' +
+        '<div class="product-foot card-actions">' +
           (qty > 0 ?
             '<div class="card-cart-row">' +
               '<div class="qty-stepper">' +
@@ -1308,6 +1322,7 @@
             :
             '<button class="add-to-cart-btn" onclick="addToCart(\'' + p.id + '\', 1)">Add to Cart</button>'
           ) +
+          '<a class="view-btn" href="' + productUrl(p.id) + '">View Product</a>' +
         '</div>' +
       '</div>' +
     '</div>';
@@ -1544,11 +1559,7 @@
     }).join('');
   });
   function goToProduct(id) {
-    searchOverlay.classList.remove('open');
-    searchInput.value = '';
-    document.getElementById('searchResults').innerHTML = '';
-    document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
-    setTimeout(function () { openQuickView(id); }, 400);
+    window.location.href = productUrl(id);
   }
 
   // ---------- HEADER SCROLL ----------
